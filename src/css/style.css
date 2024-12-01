@@ -1,0 +1,10 @@
+@import "../js/board/board.css";
+@import "../js/goblin/goblin.css";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 6px;
+}
