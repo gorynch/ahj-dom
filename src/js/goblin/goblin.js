@@ -9,6 +9,9 @@ export class Goblin {
 
   moveToAnotherCell(cells) {
     const cellIndex = Math.floor(Math.random() * cells.length);
+    while (cells[cellIndex].children.length != 0) {
+      cellIndex = Math.floor(Math.random() * cells.length);
+    };
 
     cells[cellIndex].appendChild(this._element);
   }
